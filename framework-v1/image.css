@@ -1,0 +1,27 @@
+/* image.css */
+/*
+--------------------
+** background-img **
+--------------------
+*/
+.img-bg-cover { background-size:cover; background-repeat:no-repeat; background-position:center center; }
+/*
+---------
+** img **
+---------
+*/
+.img-circle { border-radius:50%; }
+.img-rounded { border-radius:20px; }
+.img-thumbnail { padding:4px 4px 16px 4px; background-color:#FFFFFF; border:1px solid #999999; }
+
+.img-responsive { display:block; max-width:100%; height:auto; }
+
+.img-responsive-container { position:relative; }
+.img-responsive-container img { display:block; position:absolute; top:50%; left:50%; width:auto; max-width:100%; height:auto; max-height:100%; -webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); transform:translate(-50%,-50%); }
+
+.img-cover-container { float:left; position:relative; overflow:hidden; }
+.img-cover-container .img-cover { position:absolute; top:-50%; left:-50%; width:200%; height:200%; }
+.img-cover-container .img-cover img { position:absolute; top:0; left:0; right:0; bottom:0; margin:auto;  min-width:50%; min-height:50%; }
+
+.img-svg-mask { display:inline-block; -webkit-mask:url(../img/heart.svg) no-repeat 50% 50%; mask:url(../img/heart.svg) no-repeat 50% 50%; -webkit-mask-size:cover; mask-size:cover; }
+.img-svg-text { display:inline-block; -webkit-mask:url(../img/text.svg) no-repeat 50% 50%; mask:url(../img/text.svg) no-repeat 50% 50%; -webkit-mask-size:cover; mask-size:cover; }

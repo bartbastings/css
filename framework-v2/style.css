@@ -1,0 +1,8 @@
+.block__section { padding-bottom: 40px; }
+.block__header { border-top: 1px solid #f7f7f7; border-bottom: 1px solid #f7f7f7; padding: 20px 0; }
+.block__header__title {  }
+.block__main { padding: 20px 0; }
+
+.page__header { background: lightgray; }
+.page__footer { background: lightgray; }
+.page__aside { background: gray; }

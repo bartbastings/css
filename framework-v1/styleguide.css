@@ -1,0 +1,44 @@
+/* styleguide.css */
+
+/* text elementen */
+h1 { font-size:2em; line-height:1; color:#222222; }
+h1 strong { font-weight:600; }
+h1 small { color:#999999; }
+
+h2 { font-size:1.75em; color:#222222; }
+h2 strong { font-weight:600; }
+h2 small { color:#999999; }
+
+h3 { font-size:1.5em; color:#222222; }
+h3 strong { font-weight:bold; }
+h3 small { color:#999999; }
+
+h4 { font-size:1.25em; color:#222222; }
+h4 strong { font-weight:bold; }
+h4 small { color:#999999; }
+
+h5 { font-size:1.125em; color:#222222; }
+h5 strong { font-weight:bold; }
+h5 small { color:#999999; }
+
+h6 { font-size:1em; color:#222222; }
+h6 strong { font-weight:bold; }
+h6 small { color:#999999; }
+
+p { font-size:0.875em; color:#222222; }
+p strong { font-weight:bold; }
+p small { color:#999999; }
+
+p.lead { font-size:1.125em; }
+
+ins { background-color:transparent; color:#000; }
+mark { background-color:#F7F7F7; }
+hr { border-top-color:#999999; }
+code { color:#DD6667; background-color:#F7F7F7; }
+
+.text-muted { }
+.text-primary {}
+.text-success {}
+.text-info {}
+.text-warning {}
+.text-danger {}

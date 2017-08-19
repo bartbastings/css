@@ -1,0 +1,29 @@
+/*
+------------
+** button **
+------------
+*/
+.btn { display:block; border:0; outline:0; text-align:center; white-space:nowrap; vertical-align:middle; line-height:normal; cursor:pointer; zoom:1; -ms-touch-action:manipulation; touch-action:manipulation; -webkit-user-drag:none; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-user-drag:none; -webkit-appearance:none; appearance:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; background-image:none; }
+.btn::-moz-focus-inner { padding: 0; border: 0; }
+/* style */
+.btn { padding:0.5em 1em; border:none; font-family:inherit; font-size:100%; text-decoration: none; background-color:#DEDEDE; color:#222222; }
+.btn:hover, .btn:focus, .btn-hover{  }
+.btn:focus { outline:none; }
+.btn:active, .btn-active {  }
+/* link */
+.btn-link { display:inline-block; padding:0; border:0; background-color:transparent; text-decoration:underline; color:inherit; }
+/* disabled */
+.btn[disabled], .btn-disabled { pointer-events:none; opacity:0.5; cursor:pointer; }
+/* hidden */
+.btn-hidden { display:none; }
+/* btn arrows */
+[class*=btn-arrow-] { position:relative; }
+[class*=btn-arrow-]:before { position:absolute; top:50%; -ms-transform:translateY(-50%); -webkit-transform:translateY(-50%); transform:translateY(-50%); font-size:inherit; line-height:normal; }
+.btn-arrow-left { padding-left:30px; }
+.btn-arrow-left:before { content:'\2039'; left:15px; }
+.btn-arrow-left:hover:before { left:10px; }
+.btn-arrow-right { padding-right:30px; }
+.btn-arrow-right:before { content:'\203A'; right:15px; }
+.btn-arrow-right:hover:before { right:10px; }
+/* btn round */
+.btn-round { border-radius:10px; }

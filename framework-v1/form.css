@@ -1,0 +1,178 @@
+/*
+----------
+** form **
+----------
+*/
+form { float:left; width:100%; }
+fieldset { float:left; position:relative; margin:5px 0; width:100%; padding:10px 15px; border-width:1px; border-style:solid; border-color:inherit; }
+legend { float:left; margin:5px 0; padding:0; border:0; font-size:120%; white-space:normal; }
+label { float:left; width:100%; }
+input { float:left; margin:0; font-family:inherit; font-size:100%; font-weight:inherit; line-height:normal; vertical-align:middle; }
+textarea { float:left; margin:0; font-family:inherit; font-size:100%; font-weight:inherit; }
+button { float:left; margin:0; font-family:inherit; font-size:100%; font-weight:inherit; line-height:normal; vertical-align:middle; text-transform:none; }
+select { float:left; margin:0; font-family:inherit; font-size:100%; font-weight:inherit; text-transform:none; outline:0; border-width:1px; border-style:solid; border-color:#AAAAAA; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-background-clip:padding; -moz-background-clip:padding; background-clip:padding-box; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:normal; -moz-appearance:normal; appearance:normal; }
+option { float:left; text-transform:none; outline:0; border:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-background-clip:padding; -moz-background-clip:padding; background-clip:padding-box; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:normal; -moz-appearance:normal; appearance:normal; }
+optgroup { float:left; text-transform:none; outline:0; border:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-background-clip:padding; -moz-background-clip:padding; background-clip:padding-box; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:normal; -moz-appearance:normal; appearance:normal; }
+/* input */
+input[type="checkbox"], input[type="radio"] { box-sizing:border-box; padding:0; }
+input:focus { outline:0; }
+input:invalid, button:invalid, select:invalid, textarea:invalid { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+input:valid, button:valid, select:valid, textarea:valid { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+input:focus, button:focus, select:focus, textarea:focus { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; z-index:1; }
+input[disabled], button[disabled], select[disabled], textarea[disabled] { cursor:pointer; }
+/* -- input fields -- */
+/* date not supported in IE */
+/* email not supported in IE9 and earlier */
+/* tel is only supported in Safari 8 */
+/* url not supported in IE9 and earlier */
+input { float:left; width:100%; outline:0; border-width:1px; border-style:solid; font-size:100%; text-align:left; cursor:text; -webkit-background-clip:padding; -moz-background-clip:padding; background-clip:padding-box; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; }
+/* input hover */
+input:hover, input:focus, input:active, input:required, input:valid, input:invalid{ border-style:solid; border-width:1px; outline:0; }
+/* input disabled */
+input[disabled] { cursor:default; }
+/* -- input type range -- */
+input[type=range] { -webkit-appearance:none; border:1px solid white; width:100%; }
+input[type=range]:focus { outline:none; }
+/* input range chrome */
+input[type=range]::-webkit-slider-runnable-track { width:100%px; height:5px; background:#DDDDDD; border:none; border-radius:3px; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; border:none; height:16px; width:16px; border-radius:50%; background:#AAAAAA; margin-top:-4px; }
+input[type=range]:focus::-webkit-slider-runnable-track { background:#ccc; }
+/* input range FF */
+input[type=range]::-moz-range-track { width:100%; height:5px; background:#DDDDDD; border:none; border-radius:3px; }
+input[type=range]::-moz-range-thumb { border:none; height:16px; width:16px; border-radius:50%; background:#AAAAAA; }
+input[type=range]:-moz-focusring{ outline: 1px solid white; outline-offset:-1px; }
+/* input range IE */
+input[type=range]::-ms-track { width:100%; height:5px; background:transparent; border-color:transparent; border-width:6px 0; color:transparent; }
+input[type=range]::-ms-fill-lower { background:#777; border-radius:10px; }
+input[type=range]::-ms-fill-upper { background:#DDDDDD; border-radius:10px; }
+input[type=range]::-ms-thumb { border:none; height:16px; width:16px; border-radius:50%; background:#AAAAAA; }
+input[type=range]:focus::-ms-fill-lower { background:#888; }
+input[type=range]:focus::-ms-fill-upper { background:#ccc; }
+/*-- textarea --*/
+textarea { float:left; width:100%; min-height:4em; padding:5px; overflow:auto; outline:0; border-width:1px; border-style:solid; vertical-align:top; font-size:100%; resize:vertical; }
+/* hover */
+textarea:hover, textarea:focus, textarea:active { border-style:solid; border-width:1px; outline:0; cursor:text; }
+/* disabled */
+textarea[disabled] { cursor:default; }
+/* - delete calendar from date, month, time, week, datetime, datetime-local - */
+input[type=date] { -webkit-appearance:none; display:inline-block; }
+input::-webkit-datetime-edit{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-fields-wrapper{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-ampm-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-day-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-hour-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-millisecond-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-minute-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-month-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-second-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-week-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-year-field{ -webkit-appearance:none; }
+input::-webkit-datetime-edit-text{ -webkit-appearance:none; }
+input::-webkit-outer-spin-button{ -webkit-appearance:none; margin:0; }
+input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+input::-webkit-clear-button { -webkit-appearance:none; margin:0; }
+input::-webkit-calendar-picker-indicator{ -webkit-appearance:none; display:none; }
+/* - delete number arrows - */
+input[type=number]{ -moz-appearance:textfield; appearance:none; margin:0; }
+input[type=number]::-webkit-outer-spin-button{ -webkit-appearance:none; display:none; }
+input[type=number]::-webkit-inner-spin-button{ -webkit-appearance:none; display:none; }
+/* - delete search icon - */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration { -webkit-appearance:none; appearance:none; display:none; }
+input[type="search"] { -moz-appearance:textfield; appearance:textfield; }
+/* Clicking down on an input type=image can produce a dotted outline (Does this in Firefox 3.6.8 but not Firefox 4) */
+input::-moz-focus-inner, button::-moz-focus-inner{ border:0; padding:0; }
+/* - delete ms input clear cross - */
+input[type=date]::-ms-clear, input[type=month]::-ms-clear, input[type=week]::-ms-clear, input[type=time]::-ms-clear, input[type=datetime]::-ms-clear, input[type=datetime-local]::-ms-clear, input[type=email]::-ms-clear, input[type=search]::-ms-clear, input[type=tel]::-ms-clear, input[type=url]::-ms-clear, input[type=text]::-ms-clear{ display:none; }
+/* selection */
+[disabled]::-moz-selection { color:inherit; background:inherit; }
+[disabled]::selection { color:inherit; background:inherit; }
+/* legend top */
+fieldset.legend-top { margin-top:18px; }
+legend.legend-top { position:absolute; top:-1em; padding:5px; background-color:#fff; margin:5px 0 0 0; }
+legend.legend-top + label, form .legend-top + input, form .legend-top + textarea, form .legend-top + button, form .legend-top + select { margin-top:10px; }
+/* custom date */
+.ui-datepicker { background-color:#FFFFFF; border-width:1px; border-style:solid; border-color:#AAAAAA; padding:5px; width:315px; display:none; }
+.ui-datepicker .ui-datepicker-header, .ui-datepicker .ui-datepicker-calendar { float:left; width:100%; clear:both; }
+.ui-datepicker .ui-datepicker-header .ui-corner-all { display:block; padding:2px 5px; border-width:1px; border-style:solid; border-color:#AAAAAA; color:#AAAAAA; background-color:#FFFFFF; cursor:pointer; }
+.ui-datepicker .ui-datepicker-header .ui-corner-all:hover { color:#FFFFFF; background-color:#AAAAAA; }
+.ui-datepicker .ui-datepicker-header .ui-corner-all span { position:relative; line-height:22px; height:22px; }
+.ui-datepicker .ui-datepicker-header .ui-corner-all span:before { position:absolute; display:block; line-height:22px; height:22px; font-size:100%; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev { float:left; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next { float:right; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev span { padding-left:15px; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next span { padding-right:15px; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev span:before { content:'\276E'; left:0; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next span:before { content:'\276F'; right:0; }
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title { float:left; width:100%; clear:both; padding:5px 0px; }
+.ui-datepicker .ui-datepicker-calendar { table-layout:fixed; vertical-align:auto; }
+.ui-datepicker .ui-datepicker-calendar td, .ui-datepicker .ui-datepicker-calendar th { padding:0; width:40px; overflow:hidden; vertical-align:middle; }
+.ui-datepicker .ui-datepicker-calendar th span, .ui-datepicker .ui-datepicker-calendar td a  { float:left; display:block;  width:100%; height:32px; font-size:100%; line-height:32px; text-align:center; }
+.ui-datepicker .ui-datepicker-calendar th span { cursor:default; }
+/* custom search */
+.search { position:relative; }
+.search input[type=search] { padding-right:22px; margin:0; }
+.search input[type=search]:focus ~ button:before { color:inherit; }
+.search input[type=search]:focus ~ button:hover { color:inherit; }
+.search button { display:block; position:absolute; right:0px; top:0; height:100%; width:24px; border:none; background:none; }
+.search button:before { content:'\1F50D'; display:block; position:absolute; top:0; right:0; bottom:0; left:0; text-align:center; vertical-align:middle; line-height:24px; font-size:100%; }
+/* custom image */
+.insert-image { float:left; position:relative; width:100%; }
+.insert-image img { float:left; display:block; width:100%; height:100%; max-width:400px; max-height:300px; clear:both; }
+.insert-image img.hide { display:none; } 
+.insert-image .label-image { position:relative; }
+.insert-image .label-image:hover { cursor:pointer; }
+.insert-image .label-image input[type=file] { display:none; }
+.insert-image .label-image .image-btn { float:left; margin-right:5px; width:auto; height:24px; padding:3px 5px; border-width:1px; border-style:1px; border-color:#AAAAAA; border-radius:0; color:#000000; background-color:#D2D2D2; }
+.insert-image .label-image .image-btn:hover { color:#AAAAAA; background-color:#FFFFFF; }
+.insert-image .label-image .image-name { float:left; height:24px; line-height:24px;}
+/* custom file */
+.insert-file { position:relative; }
+.insert-file:hover { cursor:pointer; }
+.insert-file input[type=file] { display:none; }
+.insert-file .file-btn { float:left; margin-right:5px; width:auto; height:24px; padding:3px 5px; border-width:1px; border-style:1px; border-color:#AAAAAA; border-radius:0; color:#000000; background-color:#D2D2D2; }
+.insert-file .file-btn:hover { color:#AAAAAA; background-color:#FFFFFF; }
+.insert-file .file-name { float:left; height:24px; line-height:24px;}
+/* custom radio */
+.radio input[type=radio] { display:none; }
+.radio span { position:relative; padding-left:20px; }
+.radio span:before { content:''; position:absolute; width:14px; height:14px; left:0; top:50%; transform:translateY(-50%); border-width:1px; border-style:solid; border-color:#AAAAAA; border-radius:50%; z-index:1; }
+.radio span:after { content:''; position:absolute; width:8px; height:8px; left:3px; top:50%; transform:translateY(-50%); background-color:#fff; border-radius:50%; z-index:2; }
+.radio input[type=radio]:checked + span:after { background-color:#0000FF; }
+/* custom checkbox */
+.checkbox input[type=checkbox] { display:none; }
+.checkbox span { position:relative; padding-left:20px; }
+.checkbox span:before { content:''; position:absolute; width:14px; height:14px; left:0; top:50%; transform:translateY(-50%); border-width:1px; border-style:solid; border-color:#AAAAAA; z-index:1; }
+.checkbox span:after { content:''; position:absolute; width:12px; height:12px; left:1px; top:50%; transform:translateY(-50%); color:blue; z-index:2; font-size:12px; line-height:1; text-align:center; }
+.checkbox input[type=checkbox]:checked + span:after { content:'\2714'; }
+/* custom select */
+.select { float:left; position:relative; width:160px; }
+.select input[type=radio], .select input[type=checkbox]{ display:none; }
+.select > label { float:left; position:relative; display:block; width:100%; padding:2px 3px; border-width:1px; border-style:solid; border-color:#AAAAAA; }
+.select label::selection, .select h6::selection { color:inherit; background:inherit; }
+.select label::-moz-selection, .select h6::-moz-selection{ color:inherit; background:inherit; }
+.select > label:after { content:'\25BE'; position:absolute; display:inline-block; width:15px; height:100%; right:0; top:50%; transform:translateY(-50%); padding:2px 0; font-size:100%; text-align:center; pointer-events:none; box-sizing:border-box; }
+.select > label:hover:after{ background-color:#aaa; }
+.select .select-options{ display:none; position:absolute; top:26px; left:0; right:0; background-color:#FFFFFF; z-index:1; border-width:1px; border-style:solid; border-color:#AAAAAA; }
+.select .select-options ul li { padding:2px 3px; }
+.select .select-options ul li:hover{ background-color:#0000FF; color:#FFFFFF; }
+.select .select-options ul li input[type=radio]:checked{ background-color:blue; color:white; }
+.select input[type=checkbox]:checked ~ label:after { background-color:#aaa; }
+.select input[type=checkbox]:checked ~ .select-options { display:block; }
+/* custom select-optgroup */
+.select .select-options .select-optgroup h6{ display:block; padding:2px 3px; font-weight:bold; cursor:default; }
+.select .select-options .select-optgroup ul li { padding:2px 3px 2px 15px; }
+/* error message form */
+form .error-msg{ float:left; position:relative; width:auto; height:auto; margin:5px 0; padding:2px 3px; border-width:1px; border-style:solid; clear:both; font-size:100%; text-align:left; }
+form .error-msg:before, form .error-msg:after { display:table; content:''; }
+form .error-msg:after { clear:both; }
+/* - placeholder - */
+input::-webkit-input-placeholder { color:#AAAAAA; opacity:1; font-weight:normal; }
+input:-moz-placeholder { color:#AAAAAA; opacity:1; font-weight:normal; }
+input::-moz-placeholder { color:#AAAAAA; opacity:1; font-weight:normal; }
+input:-ms-input-placeholder { color:#AAAAAA; opacity:1; font-weight:normal; }
+/* - class required - */
+label.required::after { content:"*"; }
+input.required::-webkit-input-placeholder::after { content:"*"; }
+input.required:-moz-placeholder::after { content:"*"; }
+input.required::-moz-placeholder::after { content:"*"; }

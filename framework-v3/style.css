@@ -1,0 +1,34 @@
+body { background-color: lightgray; }
+/* page */
+.page-header { background: lightgray; -webkit-transition: height 2s ease-out; -moz-transition: height 2s ease-out; -o-transition: height 2s ease-out; transition: height 2s ease-out; }
+.page-header__top { padding: 10px 0; }
+.page-header__sub { padding: 5px 0; background-color: #f7f7f7; }
+.page-main { background-color: white; }
+.page-footer { background: lightgray; }
+.page-footer__top { padding: 20px 0; background-color: #f7f7f7; }
+.page-footer__sub { padding: 10px 0; }
+/* block */
+.block__section { padding-bottom: 40px; }
+.block__header { border-top: 1px solid #f7f7f7; border-bottom: 1px solid #f7f7f7; padding: 20px 0; }
+.block__header__title {  }
+.block__main { padding: 20px 0; }
+/* brand */
+.l-brand { float: left; position: relative; height: 75px; width: auto; }
+.l-brand__link { float: left; position: relative; top: 50%; width: auto; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); }
+.l-brand__logo { float: left; width: auto; max-width: 100%; height: auto; max-height: 50px; }
+/* slope */
+.block--slope { position: relative; padding-bottom: 0px; background-color: lightcyan; }
+.slope { position: absolute; height: 100px; right: 0; left: 0; overflow: hidden; z-index: 5; }
+.slope__item { position: absolute; border-style: solid; }
+.slope--bottom .slope__item { top: 0px; }
+.slope--top .slope__item { bottom: 0px; }
+/* arch */
+.block--arch { position: relative; padding-bottom: 0px; background-color: lightcoral; }
+.arch { position: absolute; height: 100px; right: 0; left: 0; overflow: hidden; z-index: 5; }
+.arch__item { position: absolute; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); border-radius:50%; background-color: lightcoral; }
+.arch--top .arch__item { top: 0px; }
+.arch--bottom .arch__item { bottom: 0px; }
+/**/
+.c-slidedown { float: left; width: 100%; }
+.c-slidedown__container { float: left; position: relative; overflow: hidden; width: 100%; height: 0px; }
+.c-slidedown__content { float: left; width: 100%; }
